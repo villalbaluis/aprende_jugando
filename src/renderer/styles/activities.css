@@ -1,0 +1,75 @@
+.activities-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.activities-filters {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.activities-filters .form-field {
+  min-width: 180px;
+  margin-bottom: 0;
+}
+
+.activities-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activities-table th,
+.activities-table td {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.activities-table th {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.activities-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.activities-empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.activities-modal {
+  width: min(560px, 100%);
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.option-row input[type='text'] {
+  flex: 1;
+  padding: 0.5em 0.7em;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+}
+
+.option-row input[type='radio'] {
+  width: 1.2rem;
+  height: 1.2rem;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+    <title>Aprende Jugando</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/students.css" />
+    <link rel="stylesheet" href="styles/activities.css" />
+    <link rel="stylesheet" href="styles/games.css" />
+    <link rel="stylesheet" href="styles/progress.css" />
+    <link rel="stylesheet" href="styles/settings.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="../games/engines/multiple-choice/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <nav class="sidebar" aria-label="Navegación principal">
+        <div class="sidebar__brand">Aprende Jugando</div>
+        <ul class="sidebar__nav">
+          <li><button type="button" class="nav-item" data-route="home">🏠 Inicio</button></li>
+          <li><button type="button" class="nav-item" data-route="students">🧒 Estudiantes</button></li>
+          <li><button type="button" class="nav-item" data-route="activities">📚 Actividades</button></li>
+          <li><button type="button" class="nav-item" data-route="games">🎮 Juegos</button></li>
+          <li><button type="button" class="nav-item" data-route="progress">📈 Progreso</button></li>
+          <li><button type="button" class="nav-item" data-route="settings">⚙️ Configuración</button></li>
+        </ul>
+      </nav>
+      <main class="content" id="view-root" tabindex="-1"></main>
+    </div>
+
+    <script src="services/student.service.js"></script>
+    <script src="services/activity.service.js"></script>
+    <script src="services/progress.service.js"></script>
+    <script src="services/settings.service.js"></script>
+    <script src="services/dashboard.service.js"></script>
+    <script src="pages/students/students-page.js"></script>
+    <script src="pages/activities/activities-page.js"></script>
+    <script src="../games/core/game-engine.js"></script>
+    <script src="../games/core/score-manager.js"></script>
+    <script src="../games/core/game-session.js"></script>
+    <script src="../games/engines/multiple-choice/index.js"></script>
+    <script src="pages/games/games-page.js"></script>
+    <script src="pages/progress/progress-page.js"></script>
+    <script src="pages/settings/settings-page.js"></script>
+    <script src="pages/home/home-page.js"></script>
+    <script src="router.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
