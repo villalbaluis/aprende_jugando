@@ -1,0 +1,125 @@
+.game-shell {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.game-shell:focus {
+  outline: none;
+}
+
+.game-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-tag {
+  display: inline-block;
+  background: #eef1ff;
+  color: var(--color-primary-dark);
+  border-radius: 999px;
+  padding: 0.3em 0.9em;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.game-meta {
+  color: var(--color-text-muted);
+}
+
+.game-progress {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0 0 0.5rem;
+}
+
+.game-instruction {
+  color: var(--color-text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.game-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.game-option {
+  padding: 0.9em 1.2em;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.game-option:hover {
+  border-color: var(--color-primary);
+}
+
+.game-option-disabled {
+  cursor: default;
+}
+
+.game-option-correct {
+  border-color: var(--color-success);
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.game-option-incorrect {
+  border-color: var(--color-danger);
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+
+.game-feedback {
+  padding: 0.9em 1.1em;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.game-feedback-correct {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.game-feedback-incorrect {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+
+.game-result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.game-result-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.game-result-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.game-result-label {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}

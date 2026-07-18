@@ -1,0 +1,7 @@
+{
+  "id": "multiple-choice",
+  "name": "Selección múltiple",
+  "description": "Motor configurable de preguntas con opciones, una respuesta correcta por pregunta.",
+  "activityType": "multiple-choice",
+  "version": "1"
+}

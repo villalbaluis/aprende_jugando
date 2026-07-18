@@ -1,0 +1,33 @@
+.settings-card {
+  max-width: 480px;
+  margin-bottom: 1.5rem;
+}
+
+.settings-card h2 {
+  margin-top: 0;
+}
+
+.settings-checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.settings-checkbox-field input {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.settings-display-field select {
+  padding: 0.6em 0.75em;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+}
+
+.settings-note {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
